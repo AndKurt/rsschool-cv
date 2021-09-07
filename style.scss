@@ -1,6 +1,7 @@
 $bg-head-foot: #f7f7f7;
 //$bg-main: #efebfd;
 $bg-main: #fff;
+$bg-code: #c2c2c2;
 $color: #de1d3e;
 
 * {
@@ -24,11 +25,7 @@ body {
 }
 
 h3 {
-  padding: 10px 30px;
-}
-
-ul {
-  text-align: center;
+  padding: 10px 40px;
 }
 
 hr {
@@ -55,15 +52,18 @@ hr {
 
 .top__menu {
   padding: 10px 0px;
+  ul {
+    text-align: center;
+  }
   li {
     list-style: none;
     display: inline;
     padding: 0px 10px;
     font-weight: bold;
-    a {
-      text-decoration: none;
-      color: $color;
-    }
+  }
+  a {
+    text-decoration: none;
+    color: $color;
   }
 }
 
@@ -106,5 +106,72 @@ hr {
   li {
     text-align: left;
     //list-style: none;
+  }
+}
+
+.code {
+  .comment-code {
+    opacity: 0.5;
+    font-weight: 100;
+  }
+  span {
+    font-weight: bold;
+  }
+}
+
+pre {
+  //margin-top: -30px;
+  line-height: 20px;
+  height: 310px;
+  margin-bottom: 10px;
+  background: $bg-head-foot;
+}
+code {
+  display: block;
+  margin-top: -15px;
+}
+
+.education {
+  span {
+    font-weight: bold;
+  }
+  li {
+    //list-style: none;
+    margin-left: 60px;
+    //text-align: center;
+  }
+}
+
+.experience {
+  h5 {
+    text-transform: uppercase;
+  }
+  li {
+    margin-bottom: 10px;
+    margin-left: 60px;
+    //list-style: none;
+    //text-align: center;
+  }
+  ul {
+    ul {
+      li {
+        margin-left: 35px;
+      }
+    }
+  }
+}
+
+.language {
+  span {
+    font-weight: bold;
+  }
+  ul {
+    padding-left: 150px;
+    padding-right: 150px;
+    columns: 2;
+  }
+  li {
+    list-style: none;
+    text-align: center;
   }
 }
