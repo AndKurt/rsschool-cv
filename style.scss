@@ -1,5 +1,6 @@
 $bg-head-foot: #f7f7f7;
-$bg-main: #ffd5dc;
+//$bg-main: #efebfd;
+$bg-main: #fff;
 $color: #de1d3e;
 
 * {
@@ -22,32 +23,28 @@ body {
   overflow-x: hidden;
 }
 
+h3 {
+  padding: 10px 30px;
+}
+
 ul {
   text-align: center;
 }
 
-li {
-  list-style: none;
-  display: inline;
-  padding: 0px 10px;
-  font-weight: bold;
-  a {
-    text-decoration: none;
-    color: $color;
-  }
-}
-
 hr {
   background-color: $color;
-  height: 3px;
+  height: 1px;
   width: auto;
-  margin: 20px;
+  margin-bottom: 10px;
 }
 
 .wrapper {
   width: 100%;
   height: auto;
   background: $bg-head-foot;
+  main {
+    background: $bg-main;
+  }
 }
 
 .container {
@@ -56,12 +53,18 @@ hr {
   height: auto;
 }
 
-//.top {
-//  width: 100%;
-//}
-
 .top__menu {
   padding: 10px 0px;
+  li {
+    list-style: none;
+    display: inline;
+    padding: 0px 10px;
+    font-weight: bold;
+    a {
+      text-decoration: none;
+      color: $color;
+    }
+  }
 }
 
 .top__content {
@@ -73,11 +76,35 @@ hr {
     width: 100%;
     padding: 30px 30px;
     text-align: center;
+    h1 {
+      margin-bottom: 20px;
+    }
+    hr {
+      margin-bottom: 20px;
+    }
   }
   .top__photo {
     img {
       width: 164px;
       border-radius: 10%;
     }
+  }
+}
+
+.about-me {
+  p {
+    padding: 0px 30px;
+    text-align: center;
+  }
+}
+
+.skills {
+  .skills__list {
+    display: flex;
+    justify-content: space-around;
+  }
+  li {
+    text-align: left;
+    //list-style: none;
   }
 }
