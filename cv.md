@@ -22,6 +22,7 @@ I like to set goals and achieve them!*__
 * JavaScript (basic)
 * Git and terminal (basic)
 ### Code Example:
+
 ```javascript
 // Fibonacci Sequence
 function fibonacci(n) {
@@ -37,6 +38,7 @@ function fibonacci(n) {
 
 console.log(fibonacci(7)) // 13
 ```
+
 ### Work Experience:
 * OJSC Minsk Tractor Works:
   * 2012 - Mechanic
