@@ -10,13 +10,13 @@
   <body>
     <div class="wrapper">
       <header class="top container">
-        <nav class="top__menu">
+        <nav class="menu">
           <ul>
-            <li><a href="#contact">Contacts</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#code">Code example</a></li>
-            <!--<li><a href="#project">My project</a></li>-->
+            <li><a href="#project">My project</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Work experience</a></li>
             <li><a href="#language">Language</a></li>
@@ -34,7 +34,7 @@
         </div>
       </header>
       <main class="wrapper">
-        <article class="content">
+        <div class="content">
           <section class="about-me container" id="about">
             <h3>About me</h3>
             <hr />
@@ -83,7 +83,7 @@
                 <span>function</span> fibonacci(n) {
                   <span>let</span> a = 1;
                   <span>let</span> b = 1;
-                  <span>for</span> (let i = 3; i <= n; i++) {
+                  <span>for</span> (let i = 3; i &lt;= n; i++) {
                     <span>let</span> c = a + b;
                     a = b;
                     b = c;
@@ -94,6 +94,35 @@
                 <span>console.log</span>(fibonacci(7)) <span class="comment-code">// 13</span>
               </code>
             </pre>
+          </section>
+          <section class="project container" id="project">
+            <h3>My Project</h3>
+            <hr />
+            <nav class="menu">
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://rolling-scopes-school.github.io/andkurt-JSFEPRESCHOOL/museum/"
+                    >Museum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://rolling-scopes-school.github.io/andkurt-JSFEPRESCHOOL/Custom-Video-Player/"
+                    >Custom Video Player</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://rolling-scopes-school.github.io/andkurt-JSFEPRESCHOOL/Vertical-Slider"
+                    >Vertical Slider</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </section>
           <section class="education container" id="education">
             <h3>Education</h3>
@@ -119,7 +148,7 @@
               <li>
                 <h5>LLC ByTechSolution</h5>
                 <ul>
-                  <li>2014 - System programmer</li>
+                  <li>2014 - System programmer (technical support)</li>
                 </ul>
               </li>
               <li>
@@ -145,9 +174,67 @@
               <li><span>English</span> - A2/B1</li>
             </ul>
           </section>
-        </article>
+          <section class="contact container" id="contact">
+            <h3>Contact</h3>
+            <hr />
+            <a
+              class="contact__location"
+              target="_blank"
+              href="https://www.google.com/maps/place/Minsk/@53.8847608,27.4532866,11z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9006011!4d27.558972"
+              ><img src="assets/logo/pin.svg" alt="pin" />Minsk, Belarus</a
+            >
+            <div>
+              <ul>
+                <li>
+                  <a href="mailto:kurtenkov.as@gmail.com"
+                    ><img
+                      src="assets/logo/email.svg"
+                      alt="email"
+                    />kurtenkov.as@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+375292590676"
+                    ><img
+                      src="assets/logo/call.svg"
+                      alt="phone"
+                    />+375292590676</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/andrei-kurtsiankou-972107119/"
+                    ><img
+                      src="assets/logo/linkedin-logo.svg"
+                      alt="linkedin"
+                    />LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <img src="assets/logo/skype.svg" alt="skype" />kurtenkov.as
+                </li>
+              </ul>
+            </div>
+
+          </section>
+          <hr />
+        </div>
       </main>
-      <footer class="wrapper"></footer>
+      <footer class="wrapper">
+        <section class="footer container">
+          <h6 class="copyright">September 2021</h6>
+          <nav>
+            <a href="https://github.com/AndKurt/"
+              ><img src="assets/logo/github.svg" alt="github"
+            /></a>
+            <!--</div>
+            <div class="navigation_link">-->
+            <a href="https://rs.school/js/"
+              ><img src="assets/logo/rs_school_js.svg" alt="rsshool_logo"
+            /></a>
+          </nav>
+        </section>
+      </footer>
     </div>
   </body>
 </html>
