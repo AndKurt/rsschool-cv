@@ -24,6 +24,11 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: $color;
+}
+
 h3 {
   padding: 10px 40px;
 }
@@ -33,6 +38,10 @@ hr {
   height: 1px;
   width: auto;
   margin-bottom: 10px;
+}
+
+span {
+  font-weight: bold;
 }
 
 .wrapper {
@@ -50,7 +59,7 @@ hr {
   height: auto;
 }
 
-.top__menu {
+.menu {
   padding: 10px 0px;
   ul {
     text-align: center;
@@ -60,10 +69,6 @@ hr {
     display: inline;
     padding: 0px 10px;
     font-weight: bold;
-  }
-  a {
-    text-decoration: none;
-    color: $color;
   }
 }
 
@@ -76,10 +81,8 @@ hr {
     width: 100%;
     padding: 30px 30px;
     text-align: center;
+    margin-bottom: 20px;
     h1 {
-      margin-bottom: 20px;
-    }
-    hr {
       margin-bottom: 20px;
     }
   }
@@ -87,6 +90,7 @@ hr {
     img {
       width: 164px;
       border-radius: 10%;
+      margin-right: 30px;
     }
   }
 }
@@ -105,7 +109,6 @@ hr {
   }
   li {
     text-align: left;
-    //list-style: none;
   }
 }
 
@@ -113,9 +116,6 @@ hr {
   .comment-code {
     opacity: 0.5;
     font-weight: 100;
-  }
-  span {
-    font-weight: bold;
   }
 }
 
@@ -131,14 +131,17 @@ code {
   margin-top: -15px;
 }
 
-.education {
-  span {
-    font-weight: bold;
+.project {
+  .menu {
+    li {
+      padding: 0px 40px;
+    }
   }
+}
+
+.education {
   li {
-    //list-style: none;
     margin-left: 60px;
-    //text-align: center;
   }
 }
 
@@ -149,8 +152,6 @@ code {
   li {
     margin-bottom: 10px;
     margin-left: 60px;
-    //list-style: none;
-    //text-align: center;
   }
   ul {
     ul {
@@ -162,16 +163,51 @@ code {
 }
 
 .language {
-  span {
-    font-weight: bold;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    columns: 2;
+    list-style: none;
+    text-align: center;
+  }
+}
+
+.contact {
+  div {
+    display: flex;
+    justify-content: center;
+  }
+  .contact__location {
+    display: block;
+    text-align: center;
+  }
+  img {
+    height: 20px;
+    padding-right: 10px;
   }
   ul {
-    padding-left: 150px;
-    padding-right: 150px;
     columns: 2;
   }
   li {
+    color: $color;
     list-style: none;
+    margin-bottom: 10px;
+    padding-left: 90px;
+  }
+}
+
+.footer {
+  img {
+    height: 30px;
+    padding: 20px 70px 5px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  h6 {
     text-align: center;
+    padding-bottom: 10px;
+    font-size: 18px;
   }
 }
