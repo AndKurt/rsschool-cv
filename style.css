@@ -285,7 +285,7 @@ code {
     padding: 0 0 10px 20px;
   }
   code {
-    margin-left: -110px;
+    margin-left: -130px;
   }
 }
 
@@ -344,4 +344,9 @@ code {
     height: 20px;
     padding: 0px 30px 20px;
   }
+}
+
+.project__img-link {
+  height: 150px;
+  border-radius: 50%;
 }
