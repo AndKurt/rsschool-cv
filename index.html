@@ -5,21 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV: Andrei Kurtsiankou</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrapper">
       <header class="top container">
-        <nav class="menu">
-          <ul>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#code">Code example</a></li>
-            <li><a href="#project">My project</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Work experience</a></li>
-            <li><a href="#language">Language</a></li>
+        <div class="header__burger">
+          <span></span>
+        </div>
+        <nav class="top__menu menu">
+          <ul class="menu__list" id="topMenu">
+            <li><a href="#" class="icon" id="menu">&#9776;</a></li>
+            <li><a class="menu__item" href="#contact">Contact</a></li>
+            <li><a class="menu__item" href="#about">About me</a></li>
+            <li><a class="menu__item" href="#skills">Skills</a></li>
+            <li><a class="menu__item" href="#code">Code example</a></li>
+            <li><a class="menu__item" href="#project">My project</a></li>
+            <li><a class="menu__item" href="#education">Education</a></li>
+            <li>
+              <a class="menu__item" href="#experience">Work experience</a>
+            </li>
+            <li><a class="menu__item" href="#language">Language</a></li>
           </ul>
         </nav>
         <div class="top__content">
@@ -68,8 +74,8 @@
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>SASS (SCSS)</li>
-                  <li>JavaScript (basic)</li>
-                  <li>Git and terminal (basic)</li>
+                  <li>JavaScript</li>
+                  <li>Git and terminal</li>
                 </ul>
               </div>
             </div>
@@ -112,13 +118,6 @@
                     target="_blank"
                     href="https://rolling-scopes-school.github.io/andkurt-JSFEPRESCHOOL/Custom-Video-Player/"
                     >Custom Video Player</a
-                  >
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://rolling-scopes-school.github.io/andkurt-JSFEPRESCHOOL/Vertical-Slider"
-                    >Vertical Slider</a
                   >
                 </li>
               </ul>
@@ -203,6 +202,7 @@
                 </li>
                 <li>
                   <a
+                    target="_blank"
                     href="https://www.linkedin.com/in/andrei-kurtsiankou-972107119/"
                     ><img
                       src="assets/logo/linkedin-logo.svg"
@@ -215,7 +215,6 @@
                 </li>
               </ul>
             </div>
-
           </section>
           <hr />
         </div>
@@ -227,8 +226,6 @@
             <a href="https://github.com/AndKurt/"
               ><img src="assets/logo/github.svg" alt="github"
             /></a>
-            <!--</div>
-            <div class="navigation_link">-->
             <a href="https://rs.school/js/"
               ><img src="assets/logo/rs_school_js.svg" alt="rsshool_logo"
             /></a>
@@ -236,5 +233,6 @@
         </section>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
