@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV: Andrei Kurtsiankou</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="top container">
+        <div class="header__burger">
+          <span></span>
+        </div>
+        <nav class="top__menu menu">
+          <ul class="menu__list" id="topMenu">
+            <li><a href="#" class="icon" id="menu">&#9776;</a></li>
+            <li><a class="menu__item" href="#contact">Contact</a></li>
+            <li><a class="menu__item" href="#about">About me</a></li>
+            <li><a class="menu__item" href="#skills">Skills</a></li>
+            <li><a class="menu__item" href="#code">Code example</a></li>
+            <li><a class="menu__item" href="#project">My project</a></li>
+            <li><a class="menu__item" href="#education">Education</a></li>
+            <li>
+              <a class="menu__item" href="#experience">Work experience</a>
+            </li>
+            <li><a class="menu__item" href="#language">Language</a></li>
+          </ul>
+        </nav>
+        <div class="top__content">
+          <div class="top__info">
+            <h1>Andrei Kurtsiankou</h1>
+            <hr />
+            <h2>Junior Frontend Developer</h2>
+          </div>
+          <div class="top__photo">
+            <img src="assets/img/Photo.JPG" alt="photo" />
+          </div>
+        </div>
+      </header>
+      <main class="wrapper">
+        <div class="content">
+          <section class="about-me container" id="about">
+            <h3>About me</h3>
+            <hr />
+            <p>
+              Currently I work for FLLC MetalTech as Leading Process Engineer.
+              My interests in the professional field include: technologies,
+              engineering, automatization process. I decided to try something
+              new for myself and started to learn JavaScript.<br />Now I
+              understand that I would like within the next year to get a
+              position as a Frontend Developer and my new hobby to become my
+              future job. I like to set goals and achieve them!
+            </p>
+          </section>
+          <section class="skills container" id="skills">
+            <h3>Skills</h3>
+            <hr />
+            <div class="skills__list">
+              <div>
+                <h4>Soft</h4>
+                <ul>
+                  <li>Strongly motivated person</li>
+                  <li>Fast learner</li>
+                  <li>Highly organized</li>
+                  <li>Excellent communication skills</li>
+                  <li>Team player</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Tech</h4>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>SASS (SCSS)</li>
+                  <li>JavaScript</li>
+                  <li>Git and terminal</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="code container" id="code">
+            <h3>Code example</h3>
+            <hr />
+            <pre>
+              <code>
+                <span  class="comment-code">// Fibonacci Sequence</span>
+                <span>function</span> fibonacci(n) {
+                  <span>let</span> a = 1;
+                  <span>let</span> b = 1;
+                  <span>for</span> (let i = 3; i &lt;= n; i++) {
+                    <span>let</span> c = a + b;
+                    a = b;
+                    b = c;
+                  }
+                  <span>return</span> b;
+                }
+                
+                <span>console.log</span>(fibonacci(7)) <span class="comment-code">// 13</span>
+              </code>
+            </pre>
+          </section>
+          <section class="project container" id="project">
+            <h3>My Project</h3>
+            <hr />
+            <nav class="menu">
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://rolling-scopes-school.github.io/andkurt-JSFEPRESCHOOL/museum/"
+                    >Museum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://rolling-scopes-school.github.io/andkurt-JSFEPRESCHOOL/Custom-Video-Player/"
+                    >Custom Video Player</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <section class="education container" id="education">
+            <h3>Education</h3>
+            <hr />
+            <ul>
+              <li>
+                <span>2010-2015</span> - BNTU, Mechanical Engineering Technology
+              </li>
+              <li><span>2016</span> - Streamline English courses</li>
+              <li><span>2021</span> - RS School (Stage-0)</li>
+            </ul>
+          </section>
+          <section class="experience container" id="experience">
+            <h3>Work Experience</h3>
+            <hr />
+            <ul>
+              <li>
+                <h5>OJSC Minsk Tractor Works</h5>
+                <ul>
+                  <li>2012 - Mechanic</li>
+                </ul>
+              </li>
+              <li>
+                <h5>LLC ByTechSolution</h5>
+                <ul>
+                  <li>2014 - System programmer (technical support)</li>
+                </ul>
+              </li>
+              <li>
+                <h5>OJSC Minsk Tractor Works</h5>
+                <ul>
+                  <li>2015-2017 - Process Engineer</li>
+                </ul>
+              </li>
+              <li>
+                <h5>FLLC Metal Tech</h5>
+                <ul>
+                  <li>2017-2020 - Process Engineer</li>
+                  <li>2020 - Leading Process Engineer</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section class="language container" id="language">
+            <h3>Language</h3>
+            <hr />
+            <ul>
+              <li><span>Russian</span> - native</li>
+              <li><span>English</span> - A2/B1</li>
+            </ul>
+          </section>
+          <section class="contact container" id="contact">
+            <h3>Contact</h3>
+            <hr />
+            <a
+              class="contact__location"
+              target="_blank"
+              href="https://www.google.com/maps/place/Minsk/@53.8847608,27.4532866,11z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9006011!4d27.558972"
+              ><img src="assets/logo/pin.svg" alt="pin" />Minsk, Belarus</a
+            >
+            <div>
+              <ul>
+                <li>
+                  <a href="mailto:kurtenkov.as@gmail.com"
+                    ><img
+                      src="assets/logo/email.svg"
+                      alt="email"
+                    />kurtenkov.as@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+375292590676"
+                    ><img
+                      src="assets/logo/call.svg"
+                      alt="phone"
+                    />+375292590676</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/andrei-kurtsiankou-972107119/"
+                    ><img
+                      src="assets/logo/linkedin-logo.svg"
+                      alt="linkedin"
+                    />LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <img src="assets/logo/skype.svg" alt="skype" />kurtenkov.as
+                </li>
+              </ul>
+            </div>
+          </section>
+          <hr />
+        </div>
+      </main>
+      <footer class="wrapper">
+        <section class="footer container">
+          <h6 class="copyright">September 2021</h6>
+          <nav>
+            <a href="https://github.com/AndKurt/"
+              ><img src="assets/logo/github.svg" alt="github"
+            /></a>
+            <a href="https://rs.school/js/"
+              ><img src="assets/logo/rs_school_js.svg" alt="rsshool_logo"
+            /></a>
+          </nav>
+        </section>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
